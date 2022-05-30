@@ -1,5 +1,5 @@
-const c00 = document.querySelector('div#c00')
-const c01 = document.querySelector('div#c01')
+const c00 = document.querySelector('div#c00') //With a querySelector statement, you can select an element based on a CSS selector. This means you can select 
+const c01 = document.querySelector('div#c01') //elements by ID, class, or any other type of selector. Using the getElementById method, you can only select an element by its ID.
 const c02 = document.querySelector('div#c02')
 const c10 = document.querySelector('div#c10')
 const c11 = document.querySelector('div#c11')
@@ -43,8 +43,8 @@ const object = {
 }
 // console.log(object.c00object)
 
-reset.addEventListener("click", function (e) {
-    counter = 9;
+reset.addEventListener("click", function (e) { //function(e)" is the event handling function (on event, object is created).
+    counter = 9;                               // "e" is the object handler (object is made accessible).
     object.c00 = "a"
     object.c01 = "b"
     object.c02 = "c"
@@ -70,7 +70,7 @@ reset.addEventListener("click", function (e) {
 
 })
 
-let counter = 9;
+let counter = 9; //in total there are 9 moves possible
 
 c00.addEventListener("click", function (e) {
     // console.log("You clicked c00")
@@ -336,11 +336,11 @@ function check() {
 
 function symbol(obj, place) {
     if (obj == false) {
-        place.innerHTML = '<i class="fas fa-times fa-3x fa-lg"></i>'
+        place.innerHTML = '<i class="fas fa-times fa-3x fa-lg"></i>' //displays X in the grid
         // console.log("h")
     }
     else if (obj == true) {
-        place.innerHTML = '<i class="far fa-circle fa-3x fa-lg"></i>'
+        place.innerHTML = '<i class="far fa-circle fa-3x fa-lg"></i>' //displays O in the grid
         // console.log("b")
     }
     else {
