@@ -13,6 +13,7 @@
     justify-content: center;
     color:#da234a;
     text-shadow: 1px 1px 2px rgb(73, 32, 13), 0 0 0.5em rgb(182, 14, 248);
+    /* em is Relative to the font-size of the element (2em means 2 times the size of the current font) */
 }
 
 .eachBox:hover{
